@@ -9,15 +9,6 @@ class homepage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('Hi Priyansh,',style: TextStyle(
-            fontFamily: 'Cirka',
-            fontSize: 14,
-          ),),
-        ],
-      ),
     );
   }
 }
