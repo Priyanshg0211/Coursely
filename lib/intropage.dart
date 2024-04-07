@@ -1,4 +1,5 @@
 
+import 'package:coursely/intropage2.dart';
 import 'package:flutter/material.dart';
 
 
@@ -60,7 +61,7 @@ class intropage extends StatelessWidget {
             child: ElevatedButton(onPressed: () {
                Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const intropage()),
+                  MaterialPageRoute(builder: (context) => const intropage2()),
                 );
               print('The button is pressed');
             },style: ButtonStyle(

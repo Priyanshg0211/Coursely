@@ -1,23 +1,13 @@
 import 'package:flutter/material.dart';
 
-class intropage extends StatelessWidget {
-  const intropage({super.key});
+class intropage2 extends StatelessWidget {
+  const intropage2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        actions: <Widget>[
-          TextButton(
-              onPressed: () {
-                print('The skip button is pressed');
-              },
-              child: Text(
-                'Skip',
-                style: TextStyle(fontSize: 14, color: Colors.black54),
-              )),
-        ],
       ),
       body: Column(
         children: [
@@ -28,7 +18,7 @@ class intropage extends StatelessWidget {
           SizedBox(height: 110,),
           Container(
             child: Text(
-              'Hi There!',
+              'We are all set!',
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 40,
@@ -41,7 +31,7 @@ class intropage extends StatelessWidget {
           ),
           Container(
             child: Text(
-              'Unlock your potential with every course\n one click at a time.',
+              'Embark on a journey of knowledge and growth \n one course at a time',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontFamily: 'Poppins',
@@ -64,7 +54,11 @@ class intropage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                 ),
               ),
-            ), child: Icon(Icons.arrow_forward_outlined,color: Colors.white,))
+            ), child: Text('Lets Go',style: TextStyle(
+              fontFamily: 'Poppins',
+              fontSize: 14,
+              color: Colors.white,
+            ),)),
           ),
         ],
       ),
