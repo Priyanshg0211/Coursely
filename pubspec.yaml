@@ -60,6 +60,7 @@ fonts:
 flutter:
   assets:
     - assets/introimage.jpg
+    - assets/intro2.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

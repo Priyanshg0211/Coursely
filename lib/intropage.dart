@@ -1,8 +1,6 @@
-import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 
 class intropage extends StatelessWidget {
   const intropage({super.key});
@@ -60,6 +58,10 @@ class intropage extends StatelessWidget {
           ),
           Container(
             child: ElevatedButton(onPressed: () {
+               Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const intropage()),
+                );
               print('The button is pressed');
             },style: ButtonStyle(
               backgroundColor: MaterialStatePropertyAll<Color>(Colors.black),
