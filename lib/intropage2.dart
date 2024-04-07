@@ -1,3 +1,4 @@
+import 'package:coursely/homepage.dart';
 import 'package:flutter/material.dart';
 
 class intropage2 extends StatelessWidget {
@@ -46,6 +47,10 @@ class intropage2 extends StatelessWidget {
           ),
           Container(
             child: ElevatedButton(onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => homepage()),
+              );
               print('The button is pressed');
             },style: ButtonStyle(
               backgroundColor: MaterialStatePropertyAll<Color>(Colors.black),
