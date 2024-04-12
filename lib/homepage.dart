@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class homepage extends StatelessWidget {
   const homepage({super.key});
@@ -6,41 +7,188 @@ class homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-      ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(child: Text('Hi.Priyansh\nWelcome to Coursely')),
-          SizedBox(
-            height: 40,
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 80,
+              left: 30,
+            ),
+            child: Container(
+              child: Text(
+                'Hi Priyansh\nWelcome to Coursely',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 20.0,
+                ),
+              ),
+            ),
           ),
+          SizedBox(height: 30),
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 30,
+            ),
+            child: Container(
+              child: Text(
+                'Your Courses',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 20.0,
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                height: 120,
-                width: 120,
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(10.0),
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 30,
+                ),
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
                 ),
               ),
+              SizedBox(width: 10),
               Container(
-                height: 120,
-                width: 120,
+                height: 150,
+                width: 150,
                 decoration: BoxDecoration(
                   color: Colors.black,
-                  borderRadius: BorderRadius.circular(10.0),
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
+              SizedBox(width: 10),
               Container(
-                height: 120,
-                width: 120,
+                height: 150,
+                width: 60,
                 decoration: BoxDecoration(
                   color: Colors.black,
-                  borderRadius: BorderRadius.circular(10.0),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    bottomLeft: Radius.circular(10),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 15),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 30),
+                child: Container(
+                  child: Text(
+                    'UI/UX on Figma',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 18.0,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(width: 30),
+              Container(
+                child: Text(
+                  'Flutter Workshop',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 18.0,
+                  ),
+                ),
+              ),
+              SizedBox(width: 25),
+              Container(
+                child: Text(
+                  'Atlan',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 18.0,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 2),
+          Row(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(left: 30),
+                child: Container(
+                  child: Text(
+                    'by Christopher D',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 14.0,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(width: 55),
+              Container(
+                child: Text(
+                  'by Katalina C',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 14.0,
+                  ),
+                ),
+              ),
+              SizedBox(width: 80),
+              Container(
+                child: Text(
+                  'by Flo',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 14.0,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 30),
+          Padding(
+            padding: const EdgeInsets.only(left: 30),
+            child: Container(
+              child: Text(
+                'Personal Statistics',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 20.0,
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 45),
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                    color: Colors.black12,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 40,
+              ),
+              Container(
+                height: 150,
+                width: 150,
+                decoration: BoxDecoration(
+                  color: Colors.black12,
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
             ],
@@ -48,92 +196,46 @@ class homepage extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    child: Text('UI/UX on Figma'),
-                  ),
-                  Container(
-                    child: Text('UI/UX on Figma'),
-                  ),
-                  Container(
-                    child: Text('UI/UX on Figma'),
-                  ),
-                ],
+          Padding(
+            padding: const EdgeInsets.only(left: 30),
+            child: Container(
+              child: Text(
+                'Learn more way faster',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 20.0,
+                ),
               ),
-              SizedBox(
-                height: 5,
-              ),
-              Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        child: Text('UI/UX on Figma'),
-                      ),
-                      Container(
-                        child: Text('UI/UX on Figma'),
-                      ),
-                      Container(
-                        child: Text('UI/UX on Figma'),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ],
+            ),
           ),
           SizedBox(
-            height: 40,
+            height: 20,
           ),
-          Column(
-            children: [
-              Container(
-                child: Text('Personal Statistics'),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    height: 120,
-                    width: 120,
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
+          Center(
+            child: Container(
+              height: 50,
+              width: 350,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
                   ),
-                  Container(
-                    height: 120,
-                    width: 120,
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                  ),
-                ],
+                  backgroundColor: Colors.black
+                ),
+                onPressed: () {},
+                child: Text(
+                  'Go pro now and save 80%',
+                  style: TextStyle(fontFamily: 'Poppins', fontSize: 14,color: Colors.white),
+                ),
               ),
-              SizedBox(
-                height: 20,
-              ),
-              Column(
-                children: [
-                  Container(
-                    child: Text('Learn more way faster'),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20,),
-              Container(
-                child: ElevatedButton(onPressed: () {print('the button is printing');}, child: Text('Go Pro and Save 80%')),
-              ),
-            ],
+            ),
+          ),
+          SizedBox(height: 30),
+          Container(
+            height: 80,
+            width: double.infinity,
+            color: Colors.black,
+
           ),
         ],
       ),
