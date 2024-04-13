@@ -69,6 +69,8 @@ flutter:
     - assets/introimage.jpg
     - assets/figma logo.png
     - assets/flutter-logo.png
+    - assets/Atlantis-logo.png
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

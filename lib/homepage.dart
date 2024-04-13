@@ -96,16 +96,31 @@ class homepage extends StatelessWidget {
                 ],
               ),
               SizedBox(width: 10),
-              Container(
-                height: 150,
-                width: 60,
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(10),
-                    bottomLeft: Radius.circular(10),
+              Stack(
+                children: [
+                  Container(
+                    height: 150,
+                    width: 60,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(10),
+                        bottomLeft: Radius.circular(10),
+                      ),
+                    ),
                   ),
-                ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                      top: 45,
+                      left: 20,
+                    ),
+                    child: Container(
+                      height: 60,
+                      width: 40,
+                      child: Image.asset('assets/Atlantis-logo.png'),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
