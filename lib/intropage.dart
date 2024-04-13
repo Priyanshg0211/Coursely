@@ -15,6 +15,9 @@ class intropage extends StatelessWidget {
           TextButton(
               onPressed: () {
                 print('The skip button is pressed');
+                Navigator.push(context,
+                MaterialPageRoute(builder: (context)=> intropage2()),
+                );
               },
               child: Text(
                 'Skip',

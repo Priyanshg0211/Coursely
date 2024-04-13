@@ -328,10 +328,10 @@ class homepage extends StatelessWidget {
                           child: Text(
                             'Course\nprogress',
                             textAlign: TextAlign.center,
-                            style:TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontSize: 15.0,
-                                  fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 15.0,
+                                fontWeight: FontWeight.bold),
                           ),
                         ),
                       ),
@@ -379,63 +379,17 @@ class homepage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            height: 50,
-          ),
-          Stack(
-            children: [
-              Container(
-                height: 70,
-                width: 800,
-                color: Colors.grey.withOpacity(0.3),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 5),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      height: 60,
-                      width: 60,
-                      child: Icon(
-                        Icons.home,
-                        color: Colors.black,
-                      ),
-                    ),
-                    SizedBox(width: 30),
-                    Container(
-                      height: 60,
-                      width: 60,
-                      child: Icon(
-                        Icons.search_rounded,
-                        color: Colors.white,
-                      ),
-                    ),
-                    SizedBox(width: 30),
-                    Container(
-                      height: 60,
-                      width: 60,
-                      child: Icon(
-                        Icons.analytics_rounded,
-                        color: Colors.white,
-                      ),
-                    ),
-                    SizedBox(width: 30),
-                    Container(
-                      height: 60,
-                      width: 60,
-                      child: Icon(
-                        Icons.account_circle,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        fixedColor: Colors.white,
+        unselectedItemColor: Colors.white,
+        items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home,color: Colors.white,), label: 'Home',),
+        BottomNavigationBarItem(icon: Icon(Icons.search,color: Colors.white,), label: 'Explore',),
+        BottomNavigationBarItem(icon: Icon(Icons.account_circle_sharp,color: Colors.white,), label: 'Profile',),
+      ]),
     );
   }
 }
