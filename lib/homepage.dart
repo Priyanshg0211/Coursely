@@ -216,26 +216,78 @@ class homepage extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 45),
-                child: Container(
-                  height: 150,
-                  width: 150,
-                  decoration: BoxDecoration(
-                    color: Colors.black12,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
+                child: Stack(
+                  children: [
+                    Container(
+                      height: 150,
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: Colors.black12,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 45, top: 40),
+                          child: Container(
+                            child: Text('11'),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 40),
+                          child: Container(
+                            child: Text(
+                              'Course\nCompleted',
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
               SizedBox(
                 width: 40,
               ),
-              Container(
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                  color: Colors.black12,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
+              Stack(
+                children: [
+                  Container(
+                    height: 150,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.black12,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 45, top: 40),
+                        child: Container(
+                          child: Text('3'),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: Container(
+                          child: Text(
+                            'Course\nprogress',
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              )
             ],
           ),
           SizedBox(
@@ -274,6 +326,61 @@ class homepage extends StatelessWidget {
                 ),
               ),
             ),
+          ),
+          SizedBox(
+            height: 40,
+          ),
+          Stack(
+            children: [
+              Container(
+                height: 70,
+                width: 800,
+                color: Colors.grey[400],
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 5),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 60,
+                      width: 60,
+                      child: Icon(
+                        Icons.home,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(width: 30),
+                    Container(
+                      height: 60,
+                      width: 60,
+                      child: Icon(
+                        Icons.search_rounded,
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(width: 30),
+                    Container(
+                      height: 60,
+                      width: 60,
+                      child: Icon(
+                        Icons.analytics_rounded,
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(width: 30),
+                    Container(
+                      height: 60,
+                      width: 60,
+                      child: Icon(
+                        Icons.account_circle,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ],
       ),
