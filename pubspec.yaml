@@ -56,11 +56,11 @@ dev_dependencies:
 fonts:
   - family: Poppins
     fonts:
-      - asset: assets/fonts/Poppins-Black.ttf
+      - asset: assets/fonts/Poppins-Regular.ttf 
 
   - family: Cirka
     fonts:
-      - asset: assets/fonts/Cirka-Variable.ttf
+      - asset: assets/fonts/Cirka-Bold.otf
 
 
 flutter:

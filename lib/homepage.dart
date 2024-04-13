@@ -16,11 +16,34 @@ class homepage extends StatelessWidget {
               left: 30,
             ),
             child: Container(
-              child: Text(
-                'Hi Priyansh\nWelcome to Coursely',
-                style: TextStyle(
-                  fontFamily: 'Cirka',
-                  fontSize: 20.0,
+              child: RichText(
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: 'Hi,',
+                      style: TextStyle(
+                          fontFamily: 'Cirka',
+                          fontSize: 22.0,
+                          color: Colors.black,
+                          fontWeight: FontWeight.normal),
+                    ),
+                    TextSpan(
+                      text: ' Priyansh',
+                      style: TextStyle(
+                          fontFamily: 'Cirka',
+                          fontSize: 22.0,
+                          color: Color(0xFFCC5A07),
+                          fontWeight: FontWeight.normal),
+                    ),
+                    TextSpan(
+                      text: '\nWelcome to Coursely',
+                      style: TextStyle(
+                          fontFamily: 'Cirka',
+                          fontSize: 22.0,
+                          color: Colors.black,
+                          fontWeight: FontWeight.normal),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -36,6 +59,7 @@ class homepage extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
@@ -134,28 +158,31 @@ class homepage extends StatelessWidget {
                     'UI/UX on Figma',
                     style: TextStyle(
                       fontFamily: 'Poppins',
-                      fontSize: 18.0,
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
               ),
-              SizedBox(width: 30),
+              SizedBox(width: 45),
               Container(
                 child: Text(
                   'Flutter Workshop',
                   style: TextStyle(
                     fontFamily: 'Poppins',
-                    fontSize: 18.0,
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
-              SizedBox(width: 25),
+              SizedBox(width: 40),
               Container(
                 child: Text(
                   'Atlan',
                   style: TextStyle(
                     fontFamily: 'Poppins',
-                    fontSize: 18.0,
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
@@ -165,13 +192,14 @@ class homepage extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: EdgeInsets.only(left: 30),
+                padding: EdgeInsets.only(left: 32),
                 child: Container(
                   child: Text(
                     'by Christopher D',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 14.0,
+                      fontWeight: FontWeight.normal,
                     ),
                   ),
                 ),
@@ -207,6 +235,7 @@ class homepage extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
@@ -229,20 +258,31 @@ class homepage extends StatelessWidget {
                     Column(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(left: 45, top: 40),
+                          padding: const EdgeInsets.only(left: 35, top: 30),
                           child: Container(
-                            child: Text('11'),
+                            child: Text(
+                              '11',
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 30.0,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
                           ),
                         ),
                         SizedBox(
-                          height: 10,
+                          height: 3,
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 40),
+                          padding: const EdgeInsets.only(left: 35),
                           child: Container(
                             child: Text(
                               'Course\nCompleted',
                               textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
                         ),
@@ -267,13 +307,20 @@ class homepage extends StatelessWidget {
                   Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 45, top: 40),
+                        padding: const EdgeInsets.only(left: 40, top: 30),
                         child: Container(
-                          child: Text('3'),
+                          child: Text(
+                            '3',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 30.0,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
                         ),
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 3,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 40),
@@ -281,6 +328,10 @@ class homepage extends StatelessWidget {
                           child: Text(
                             'Course\nprogress',
                             textAlign: TextAlign.center,
+                            style:TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.bold),
                           ),
                         ),
                       ),
@@ -301,6 +352,7 @@ class homepage extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
@@ -328,14 +380,14 @@ class homepage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 40,
+            height: 50,
           ),
           Stack(
             children: [
               Container(
                 height: 70,
                 width: 800,
-                color: Colors.grey[400],
+                color: Colors.grey.withOpacity(0.3),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 5),
