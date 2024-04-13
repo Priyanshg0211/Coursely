@@ -56,17 +56,19 @@ dev_dependencies:
 fonts:
   - family: Poppins
     fonts:
-      - asset: assets/fonts/
+      - asset: assets/fonts/Poppins-Black.ttf
 
   - family: Cirka
     fonts:
-      - asset: assets/fonts/Poppins
-      - asset: assets/fonts/Cirka
+      - asset: assets/fonts/Cirka-Variable.ttf
+
 
 flutter:
   assets:
-    - assets/introimage.jpg
     - assets/intro2.png
+    - assets/introimage.jpg
+    - assets/figma logo.png
+    - assets/flutter-logo.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
