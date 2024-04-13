@@ -47,6 +47,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+  google_fonts: ^6.2.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -59,7 +60,8 @@ fonts:
 
   - family: Cirka
     fonts:
-      - asset: assets/fonts/
+      - asset: assets/fonts/Poppins
+      - asset: assets/fonts/Cirka
 
 flutter:
   assets:
@@ -70,6 +72,7 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
      
 
 

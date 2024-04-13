@@ -19,7 +19,7 @@ class homepage extends StatelessWidget {
               child: Text(
                 'Hi Priyansh\nWelcome to Coursely',
                 style: TextStyle(
-                  fontFamily: 'Poppins',
+                  fontFamily: 'Cirka',
                   fontSize: 20.0,
                 ),
               ),
