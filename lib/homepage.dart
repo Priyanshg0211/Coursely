@@ -72,13 +72,28 @@ class homepage extends StatelessWidget {
                 ),
               ),
               SizedBox(width: 10),
-              Container(
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(10),
-                ),
+              Stack(
+                children: [
+                  Container(
+                    height: 150,
+                    width: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 45,
+                      top: 45,
+                    ),
+                    child: Container(
+                      height: 60,
+                      width: 60,
+                      child: Image.asset('assets/flutter-logo.png'),
+                    ),
+                  ),
+                ],
               ),
               SizedBox(width: 10),
               Container(
