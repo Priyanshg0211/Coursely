@@ -47,13 +47,28 @@ class homepage extends StatelessWidget {
                 padding: const EdgeInsets.only(
                   left: 30,
                 ),
-                child: Container(
-                  height: 150,
-                  width: 150,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
+                child: Stack(
+                  children: [
+                    Container(
+                      height: 150,
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(
+                        left: 45,
+                        top: 45,
+                      ),
+                      child: Container(
+                        height: 60,
+                        width: 60,
+                        child: Image.asset('assets/figma logo.png'),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(width: 10),
@@ -217,25 +232,18 @@ class homepage extends StatelessWidget {
               width: 350,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  backgroundColor: Colors.black
-                ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    backgroundColor: Colors.black),
                 onPressed: () {},
                 child: Text(
                   'Go pro now and save 80%',
-                  style: TextStyle(fontFamily: 'Poppins', fontSize: 14,color: Colors.white),
+                  style: TextStyle(
+                      fontFamily: 'Poppins', fontSize: 14, color: Colors.white),
                 ),
               ),
             ),
-          ),
-          SizedBox(height: 30),
-          Container(
-            height: 80,
-            width: double.infinity,
-            color: Colors.black,
-
           ),
         ],
       ),
