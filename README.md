@@ -1,5 +1,5 @@
 
-# Coursely App
+# Project 1: Coursely - Flutter Widget Implementation
 
 Welcome to Coursely, a certification course app designed to help users discover and enroll in various courses. This project serves as a beginner's implementation of basic widgets in Flutter, utilizing knowledge gained in UI design and widget implementation.
 
