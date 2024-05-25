@@ -40,3 +40,4 @@ Coursely serves as a foundational project for learning Flutter development, focu
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Priyanshg0211)
 
 Happy Coding!
+Happy Work!
